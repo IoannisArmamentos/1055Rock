@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".Programold">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:touchscreenBlocksFocus="false">
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cvWeekdays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                card_view:cardBackgroundColor="#99000000"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/llWeekdays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvRoundOverViewHeader"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/program1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/program1"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold|italic" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:stretchColumns="*"
+                        android:textColor="#ffffff">
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program36"
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program37"
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="82dp"
+                                android:padding="3dip"
+                                android:text="@string/program38"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program2"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program3"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:padding="3dip"
+                                android:text="@string/program4"
+                                android:textAlignment="textStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program5"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program6"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program7"
+                                android:textAlignment="textStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program8"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program9"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program10"
+                                android:textAlignment="textStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program11"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program12"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program13"
+                                android:textAlignment="textStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program14"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program15"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program16"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program17"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program18"
+                                android:textAlignment="textStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program19"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program20"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program21"
+                                android:textAlignment="textStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program22"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program23"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cvWeekends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                card_view:cardBackgroundColor="#99000000"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/llWeekends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvRoundOverViewHeader"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/program24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:text="@string/program24"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+                        android:textStyle="bold|italic" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:ems="10"
+                        android:stretchColumns="*"
+                        android:textColor="#ffffff">
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program25"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program26"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text=""
+                                android:textAlignment="viewStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program27"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program28"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program29"
+                                android:textAlignment="textStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program30"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program31"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program32"
+                                android:textAlignment="viewStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program33"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program34"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program35"
+                                android:textAlignment="textStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program22"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program39"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

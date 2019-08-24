@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".Contact">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:touchscreenBlocksFocus="false">
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cvContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            card_view:cardBackgroundColor="#99000000"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/llContact"
+                android:layout_width="match_parent"
+                android:layout_height="237dp"
+                android:layout_below="@+id/tvRoundOverViewHeader"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contact1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/contact1"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contact2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:text="@string/contact2"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/contact3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:text="@string/contact3"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/contact4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:text="@string/contact4"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/contact5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:autoLink="email"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:text="@string/contact5"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/contact6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:autoLink="email"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:text="@string/contact6"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="1"
+                    android:textColor="#ffffff">
+
+                    <TableRow>
+
+                        <Button
+                            android:id="@+id/button_Facebook"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/facebook" />
+
+                        <Button
+                            android:id="@+id/void1"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@color/cardview_shadow_end_color" />
+
+                        <Button
+                            android:id="@+id/button_Instagram"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/instagram" />
+
+                        <Button
+                            android:id="@+id/void2"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@color/cardview_shadow_end_color" />
+
+                        <Button
+                            android:id="@+id/button_Twitter"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/twitter" />
+
+                        <Button
+                            android:id="@+id/void3"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@color/cardview_shadow_end_color" />
+
+                        <Button
+                            android:id="@+id/button_Email"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/email" />
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

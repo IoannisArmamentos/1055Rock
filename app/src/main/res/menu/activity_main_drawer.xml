@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_radio_black_24dp"
+            android:title="@string/nav_item_home" />
+        <item
+            android:id="@+id/nav_program"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="@string/nav_item_program" />
+        <item
+            android:id="@+id/nav_producers"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="@string/nav_item_producers" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact_phone_black_24dp"
+            android:title="@string/nav_item_contact" />
+    </group>
+
+    <item android:title="Διάφορα">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="@string/nav_item_about" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rate_review_black_24dp"
+                android:title="Rate" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/nav_item_exit" />
+        </menu>
+    </item>
+</menu>

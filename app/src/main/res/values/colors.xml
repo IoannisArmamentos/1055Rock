@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary2">#3F51B5</color>
+    <color name="colorPrimaryDark2">#303F9F</color>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#eb1c27</color>
+    <color name="colorTrans">#99000000</color>
+    <color name="colorDarkPressed">#1f000000</color>
+
+    <color name="flatRed">#EB4B3D</color>
+    <color name="flatRedDark">#BB3D27</color>
+    <color name="flatOrange">#E67F22</color>
+    <color name="flatOrangeDark">#CA5006</color>
+    <color name="flatYellow">#FFCD00</color>
+    <color name="flatYellowDark">#FFA702</color>
+    <color name="flatSand">#F0DFB3</color>
+    <color name="flatSandDark">#D4C399</color>
+    <color name="flatNavyBlue">#35485D</color>
+    <color name="flatNavyBlueDark">#2C3D4D</color>
+    <color name="flatBlack">#2B2B2B</color>
+    <color name="flatBlackDark">#262626</color>
+    <color name="flatMagenta">#9A59B5</color>
+    <color name="flatMagentaDark">#8E49AB</color>
+    <color name="flatTeal">#386F83</color>
+    <color name="flatTealDark">#336272</color>
+    <color name="flatSkyBlue">#3598DC</color>
+    <color name="flatSkyBlueDark">#2880B7</color>
+    <color name="flatGreen">#2DCB70</color>
+    <color name="flatGreenDark">#26AF60</color>
+    <!--<color name="flatMint">#220B99C</color>-->
+    <color name="flatMintDark">#199F86</color>
+    <color name="flatWhite">#ECF0F1</color>
+    <color name="flatWhiteDark">#BDC2C8</color>
+    <color name="flatGrey">#95A5A5</color>
+    <color name="flatGreyDark">#7D8D8C</color>
+    <color name="flatForestGreen">#336041</color>
+    <color name="flatForestGreenDark">#325034</color>
+    <color name="flatPurple">#735EC7</color>
+    <color name="flatPurpleDark">#5B48A2</color>
+    <color name="flatBrown">#604436</color>
+    <color name="flatBrownDark">#523B2B</color>
+    <color name="flatPlum">#60345D</color>
+    <color name="flatPlumDark">#4F2B4F</color>
+    <color name="flatWatermelon">#ED7179</color>
+    <color name="flatWatermelonDark">#D2575C</color>
+    <color name="flatLime">#A5C43A</color>
+    <color name="flatLimeDark">#90B01F</color>
+    <color name="flatPink">#F37CC4</color>
+    <color name="flatPinkDark">#D35CA0</color>
+    <color name="flatMaroon">#732E27</color>
+    <color name="flatMaroonDark">#6A2625</color>
+    <color name="flatCoffee">#A18570</color>
+    <color name="flatCoffeeDark">#90715C</color>
+    <color name="flatPowderBlue">#B7C8F3</color>
+    <color name="flatPowderBlueDark">#9AA8D8</color>
+    <color name="flatBlue">#5165A3</color>
+    <color name="flatBlueDark">#384C7F</color>
+
+    <color name="menuBackground">#F8F8FA</color>
+    <color name="menuCategoryDividerBackground">#FEFEFE</color>
+    <color name="menuCategoryBackground">#F5F5F6</color>
+    <color name="menuCategoryTitle">#333333</color>
+    <color name="menuBackButton">#333333</color>
+    <color name="menuCategoryDivider">#FFFFFF</color>
+    <color name="menuWelcomeScreenColor">#727271</color>
+    <color name="menuLanguageSelectionBackground">#EEEEF6</color>
+
+    <color name="dishArrow">#B8B9B9</color>
+
+    <color name="pagerSelected">#626363</color>
+    <color name="pagerUnselected">#D9DADA</color>
+    <color name="dishTitleColor">#4E4F4F</color>
+    <color name="dishDescriptionColor">#626363</color>
+    <color name="dishPrice">#4E4F4F</color>
+    <color name="addToCart">#4E4F4F</color>
+
+    <color name="menuDishProductCategorySeparator">#B2B3B3</color>
+    <color name="menuProductCategorySelectedCategory">#626363</color>
+    <color name="menuProductCategoryUnSelectedCategory">#B2B3B3</color>
+
+    <color name="menuCartTitle">#4E4F4F</color>
+    <color name="menuCartDishName">#6F6F6F</color>
+</resources>

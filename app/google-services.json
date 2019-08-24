@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "752364139370",
+    "firebase_url": "https://rock-ec8c2.firebaseio.com",
+    "project_id": "rock-ec8c2",
+    "storage_bucket": "rock-ec8c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752364139370:android:0932c49973f035f8",
+        "android_client_info": {
+          "package_name": "com.desertovercrowded.rock1055"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752364139370-do0fog54muopk958hb7k0omf0oibg6mp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOvEJBgpSBwe5IpX__6adz1M3Gi2DUuEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752364139370-do0fog54muopk958hb7k0omf0oibg6mp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
