@@ -10,7 +10,6 @@ import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.IBinder;
-import android.os.PowerManager;
 import android.support.v4.media.session.MediaSessionCompat;
 
 import androidx.core.app.NotificationCompat;
@@ -20,11 +19,9 @@ import java.io.IOException;
 import static com.desertovercrowded.rock1055.Application.CHANNEL_ID;
 
 public class StreamService extends Service {
-
     static MediaPlayer player;
     public int serviceAvailable;
     public static boolean isPlaying = false;
-    public PowerManager.WakeLock mWakeLock;
     private MediaSessionCompat mediaSession;
 
     public StreamService() {
@@ -37,11 +34,10 @@ public class StreamService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-
         initializeNotificationChannel(); // NotificationChannel, MUST PUT PLAY AND STOP BUTTONS
         initializeMediaPlayer(); // Initialize MediaPlayer
         startPlaying(); // Start Streaming
-        return START_STICKY;
+        return START_NOT_STICKY; // Better START_STICKY they say
     }
 
     public void initializeNotificationChannel() {
@@ -63,6 +59,7 @@ public class StreamService extends Service {
         Intent activityS = new Intent(this, StreamService.class);
         PendingIntent contentS = PendingIntent.getActivity(this,
                 0, activityStop, 0);*/
+
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle("1055 Rock")
                 //.setContentText(text)
@@ -103,18 +100,12 @@ public class StreamService extends Service {
         }
     }
 
-
     public static void startPlaying() {
-        //ibTooglePlay.setVisibility(View.INVISIBLE); // I should put a buffering icon
         try {
             player.prepareAsync();
-
             player.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 public void onPrepared(MediaPlayer mp) {
-                    //serviceAvailable = 1;
                     player.start();
-                    //isPlaying = true;
-                    //ibTooglePlay.setVisibility(View.VISIBLE);
                 }
             });
         } catch (Exception ignored) {
@@ -127,7 +118,6 @@ public class StreamService extends Service {
         player.release();
         player = null;
     }
-
 
     @Override
     public void onDestroy() {

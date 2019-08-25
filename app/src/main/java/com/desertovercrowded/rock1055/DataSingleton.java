@@ -14,7 +14,6 @@ public class DataSingleton {
     private static ProducerList producerList;
 
     private DataSingleton() {
-
     }
 
     public static DataSingleton getInstance() {
@@ -42,7 +41,7 @@ public class DataSingleton {
             byte[] bytes = new byte[stream.available()];
             stream.read(bytes, 0, bytes.length);
 
-             producerList = gson.fromJson(new String(bytes), ProducerList.class);
+            producerList = gson.fromJson(new String(bytes), ProducerList.class);
         } catch (IOException e) {
             e.printStackTrace();
         }

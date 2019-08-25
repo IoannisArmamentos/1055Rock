@@ -93,10 +93,10 @@ public class MainActivity extends AppCompatActivity
             return;
         }
 
-        // EDW EINAI TO MAGKIA SOU A
+        // Foreground Service for streaming. May god's love be with you
         initializeUIElements();
 
-        // For kolotragoudo
+        // Handler for song title from text file, repeats every 20sec
         mHandler = new Handler();
         startRepeatingTask();
     }
@@ -200,19 +200,15 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 if (!streams) {
-                   // ibTooglePlay.setVisibility(View.GONE);
                     Intent serviceIntent = new Intent(v.getContext(), StreamService.class);
                     ContextCompat.startForegroundService(v.getContext(), serviceIntent);
-                    //ibTooglePlay.setVisibility(View.VISIBLE);
                     ibTooglePlay.setImageResource(R.drawable.ic_pause_circle_outline_black_48dp);
                     streams=true;
                 }
                 else
                 {
-                    //ibTooglePlay.setVisibility(View.GONE);
                     Intent serviceIntent = new Intent(v.getContext(), StreamService.class);
                     stopService(serviceIntent);
-                    //ibTooglePlay.setVisibility(View.VISIBLE);
                     ibTooglePlay.setImageResource(R.drawable.ic_play_circle_outline_black_48dp);
                     streams=false;
                 }

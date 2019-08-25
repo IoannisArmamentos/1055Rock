@@ -23,8 +23,6 @@ public class Contact extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-        //getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimary));
-
         final Button bFacebook = findViewById(R.id.button_Facebook);
         final Button bInstagram = findViewById(R.id.button_Instagram);
         final Button bTwitter = findViewById(R.id.button_Twitter);
