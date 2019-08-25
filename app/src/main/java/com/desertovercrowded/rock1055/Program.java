@@ -6,12 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class Programold extends AppCompatActivity {
+public class Program extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_programold);
+        setContentView(R.layout.activity_program);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

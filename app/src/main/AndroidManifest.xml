@@ -16,12 +16,12 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name="com.desertovercrowded.rock1055.Producers" />
-        <activity android:name="com.desertovercrowded.rock1055.Programold" />
+        <activity android:name="com.desertovercrowded.rock1055.Program" />
         <activity android:name="com.desertovercrowded.rock1055.About" />
         <activity android:name="com.desertovercrowded.rock1055.Contact" />
         <activity
             android:name="com.desertovercrowded.rock1055.MainActivity"
-            android:configChanges="orientation|screenSize"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_main_menu"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar" />

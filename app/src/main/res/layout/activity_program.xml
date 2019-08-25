@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg2"
-    tools:context=".Programold">
+    tools:context=".Program">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,9 +22,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="2dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="2dp"
                 card_view:cardBackgroundColor="#99000000"
                 card_view:cardCornerRadius="5dp"
                 card_view:cardUseCompatPadding="true">
@@ -51,9 +51,9 @@
                     <TableLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
                         android:stretchColumns="*"
                         android:textColor="#ffffff">
 
@@ -100,7 +100,6 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:layout_width="150dp"
                                 android:padding="3dip"
                                 android:text="@string/program4"
                                 android:textAlignment="textStart"
@@ -265,9 +264,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="2dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="2dp"
                 card_view:cardBackgroundColor="#99000000"
                 card_view:cardCornerRadius="5dp"
                 card_view:cardUseCompatPadding="true">
@@ -295,10 +294,9 @@
                     <TableLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:ems="10"
+                        android:layout_marginRight="5dp"
                         android:stretchColumns="*"
                         android:textColor="#ffffff">
 

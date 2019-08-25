@@ -91,11 +91,11 @@
 
             <TextView
                 android:id="@+id/songplaying"
-                android:layout_width="211dp"
-                android:layout_height="62dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="36dp"
+                android:layout_width="224dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="32dp"
                 android:maxLines="3"
                 android:text="@string/songplaying"
                 android:textColor="#ffffff"

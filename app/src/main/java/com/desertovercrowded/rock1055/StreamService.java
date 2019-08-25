@@ -20,8 +20,6 @@ import static com.desertovercrowded.rock1055.Application.CHANNEL_ID;
 
 public class StreamService extends Service {
     static MediaPlayer player;
-    public int serviceAvailable;
-    public static boolean isPlaying = false;
     private MediaSessionCompat mediaSession;
 
     public StreamService() {
@@ -34,6 +32,15 @@ public class StreamService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+
+        if (flags == -1) {
+            try {
+                stopPlaying();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
         initializeNotificationChannel(); // NotificationChannel, MUST PUT PLAY AND STOP BUTTONS
         initializeMediaPlayer(); // Initialize MediaPlayer
         startPlaying(); // Start Streaming
@@ -68,13 +75,15 @@ public class StreamService extends Service {
                 .setLargeIcon(artwork)
                 /*.addAction(R.drawable.ic_pause_circle_filled_black_24dp, "Previous", contentS)
                 .addAction(R.drawable.ic_play_circle_outline_black_24dp, "Play", contentPlay)
-                .addAction(R.drawable.ic_exit_to_app_black_24dp, "Exit", null)*/
+                */
+                //.addAction(R.drawable.ic_exit_to_app_black_24dp, "Exit", null)
                 .setStyle(new androidx.media.app.NotificationCompat.MediaStyle()
                         //.setShowActionsInCompactView(1,2)
                         .setMediaSession(mediaSession.getSessionToken()))
                 //.setSubText("Sub Text")
                 .setContentIntent(pendingIntent)
                 .setPriority(NotificationCompat.PRIORITY_LOW)
+
                 .build();
 
         startForeground(1, notification);
@@ -112,11 +121,15 @@ public class StreamService extends Service {
         }
     }
 
-    public void stopPlaying() throws IOException {
-        player.stop();
-        player.reset();
-        player.release();
-        player = null;
+    public static void stopPlaying() throws IOException {
+        try {
+            player.stop();
+            player.reset();
+            player.release();
+            player = null;
+        } catch (Exception ignored) {
+
+        }
     }
 
     @Override
