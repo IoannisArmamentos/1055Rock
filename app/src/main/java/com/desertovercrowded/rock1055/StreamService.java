@@ -32,7 +32,7 @@ public class StreamService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-
+        // For notification channel TODO
         if (flags == -1) {
             try {
                 stopPlaying();
