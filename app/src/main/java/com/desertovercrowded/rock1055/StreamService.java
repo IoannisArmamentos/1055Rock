@@ -95,7 +95,7 @@ public class StreamService extends Service {
                 .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
                 .setUsage(AudioAttributes.USAGE_MEDIA)
                 .build());
-        player.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        //player.setAudioStreamType(AudioManager.STREAM_MUSIC);
 
         try {
             //player.setDataSource("http://radio.onweb.gr:8078/");
