@@ -1,6 +1,9 @@
 package com.desertovercrowded.rock1055;
 
+import android.app.Service;
+import android.content.Intent;
 import android.os.Handler;
+import android.os.IBinder;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +16,7 @@ public class PlayingSongTitleFetcher {
     private int mInterval = 20000; // 20 seconds
     private ISongTitleFetcher iSongTitleFetcher;
 
-    PlayingSongTitleFetcher(ISongTitleFetcher iSongTitleFetcher) {
+     PlayingSongTitleFetcher(ISongTitleFetcher iSongTitleFetcher) {
         mHandler = new Handler();
         this.iSongTitleFetcher = iSongTitleFetcher;
     }

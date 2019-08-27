@@ -92,7 +92,7 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.MyView
         builder.setMessage(producer.getDescription())
                 .setTitle(producer.getName())
                 .setCancelable(true)
-                .setNeutralButton(R.string.exit,
+                .setNeutralButton(R.string.back,
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 dialog.dismiss();

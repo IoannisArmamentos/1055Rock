@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">1055 Rock</string>
+    <string name="app_name">1055 Rock Radio</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -14,19 +14,20 @@
     <string name="settings">Ρυθμίσεις</string>
     <string name="app_description">1055 Rock LiveStream</string>
     <string name="exit">Έξοδος</string>
+    <string name="back">ΠΙΣΩ</string>
 
     <string name="nav_item_home">Αρχική</string>
     <string name="nav_item_program">Πρόγραμμα</string>
     <string name="nav_item_producers">Παραγωγοί</string>
     <string name="nav_item_contact">Επικοινωνία</string>
-    <string name="nav_item_settings">Ρυθμίσεις</string>
+    <string name="nav_item_site">Site</string>
     <string name="nav_item_about">Σχετικά</string>
     <string name="nav_item_exit"> Έξοδος</string>
     <string name="title_activity_main_menu">1055 Rock</string>
 
     <string name="share">"Το 1055 Rock Radio τώρα διαθέσιμο και για Android! Κατέβασε το από εδώ: https://play.google.com/store/apps/details?id=com.desertovercrowded.rock1055"</string>
 
-    <!-- String related to About -->
+    <!-- String related to AboutMe -->
     <string name="title_activity_about">Σχετικά</string>
     <string name="about_email_intent">1055 Rock</string>
     <string name="about_not_found_email">Δεν βρέθηκε εφαρμογή email</string>
@@ -48,6 +49,8 @@
 -Εμφανίζεται ο τίτλος του τραγουδιού που παίζει.
 -Είναι σχεδιασμένη και παρέχει πληροφορίες για τον σταθμό, τους παραγωγούς και τα προγράμματα τους.</string>
     <string name="about8">Σε περίπτωση που κολλάει ή δεν παίζει το Stream, δώστε λίγη αγάπη στο Server του σταθμού ❤</string>
+    <string name="about9">Bonus Spotify Rock Playlist μου (η καλύτερη που υπάρχει :D ) : https://open.spotify.com/playlist/5fKDGMFztAB9qzpgj8OY6N?si=Ccb5CUHrQF6dgKnyggECfw</string>
+    <string name="about10"></string>
 
 
     <!-- String related to Contact -->

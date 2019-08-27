@@ -17,7 +17,7 @@
         android:usesCleartextTraffic="true">
         <activity android:name="com.desertovercrowded.rock1055.Producers" />
         <activity android:name="com.desertovercrowded.rock1055.Program" />
-        <activity android:name="com.desertovercrowded.rock1055.About" />
+        <activity android:name="com.desertovercrowded.rock1055.AboutMe" />
         <activity android:name="com.desertovercrowded.rock1055.Contact" />
         <activity
             android:name="com.desertovercrowded.rock1055.MainActivity"

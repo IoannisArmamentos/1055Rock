@@ -20,6 +20,10 @@
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_contact_phone_black_24dp"
             android:title="@string/nav_item_contact" />
+        <item
+            android:id="@+id/nav_site"
+            android:icon="@drawable/ic_open_in_browser_black_24dp"
+            android:title="@string/nav_item_site" />
     </group>
 
     <item android:title="Διάφορα">

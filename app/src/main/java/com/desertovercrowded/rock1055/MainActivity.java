@@ -21,6 +21,7 @@ import static com.desertovercrowded.rock1055.Extensions.displayNoInternetAlert;
 import static com.desertovercrowded.rock1055.Extensions.isOnline;
 import static com.desertovercrowded.rock1055.Extensions.rate;
 import static com.desertovercrowded.rock1055.Extensions.share;
+import static com.desertovercrowded.rock1055.Extensions.site;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, ISongTitleFetcher {
@@ -103,8 +104,11 @@ public class MainActivity extends AppCompatActivity
                 intent.setClass(this, Contact.class);
                 startActivity(intent);
                 break;
+            case R.id.nav_site:
+                site(this);
+                break;
             case R.id.nav_info:
-                intent.setClass(this, About.class);
+                intent.setClass(this, AboutMe.class);
                 startActivity(intent);
                 break;
             case R.id.nav_share:
@@ -130,6 +134,15 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
+    public void onSongTitleAvailable(String title) {
+        TextView textView = findViewById(R.id.songplaying);
+
+        if (title != null) {
+            textView.setText(title);
+        }
+    }
+
+    @Override
     public void onDestroy() {
         super.onDestroy();
         playingSongTitleFetcher.stopRepeatingTask();
@@ -138,14 +151,5 @@ public class MainActivity extends AppCompatActivity
         // Kill stream service
         Intent serviceIntent = new Intent(this, StreamService.class);
         stopService(serviceIntent);
-    }
-
-    @Override
-    public void onSongTitleAvailable(String title) {
-        TextView textView = findViewById(R.id.songplaying);
-
-        if (title != null) {
-            textView.setText(title);
-        }
     }
 }

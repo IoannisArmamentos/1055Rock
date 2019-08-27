@@ -32,19 +32,19 @@ public class StreamService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        // For notification channel TODO
+/*        // For notification channel TODO
         if (flags == -1) {
             try {
                 stopPlaying();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
 
         initializeNotificationChannel(); // NotificationChannel, MUST PUT PLAY AND STOP BUTTONS
         initializeMediaPlayer(); // Initialize MediaPlayer
         startPlaying(); // Start Streaming
-        return START_NOT_STICKY; // Better START_STICKY they say
+        return START_NOT_STICKY; // Better START_STICKY they say for mediaplayer
     }
 
     public void initializeNotificationChannel() {

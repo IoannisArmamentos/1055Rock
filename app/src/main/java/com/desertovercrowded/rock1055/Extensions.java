@@ -17,6 +17,13 @@ import androidx.appcompat.app.AlertDialog;
 import static com.desertovercrowded.rock1055.Application.CHANNEL_ID;
 
 class Extensions {
+    //Open Website
+    static void site(Context context) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(
+                "http://www.1055rock.gr"));
+        context.startActivity(intent);
+    }
 
     //Share the app
     static void share(Context context) {
