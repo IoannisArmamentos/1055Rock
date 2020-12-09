@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class Contact extends AppCompatActivity {
@@ -23,10 +24,10 @@ public class Contact extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-        final Button bFacebook = findViewById(R.id.button_Facebook);
-        final Button bInstagram = findViewById(R.id.button_Instagram);
-        final Button bTwitter = findViewById(R.id.button_Twitter);
-        final Button bEmail = findViewById(R.id.button_Email);
+        final ImageButton bFacebook = findViewById(R.id.button_Facebook);
+        final ImageButton bInstagram = findViewById(R.id.button_Instagram);
+        final ImageButton bTwitter = findViewById(R.id.button_Twitter);
+        final ImageButton bEmail = findViewById(R.id.button_Email);
 
         bFacebook.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -57,7 +58,7 @@ public class Contact extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_SENDTO);
                 intent.setData(Uri.parse("mailto:grammateia@1055rock.gr"));
-                intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.about_email_intent));
+                //intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.about_email_intent));
                 try {
                     startActivity(intent);
                 } catch (Exception e) {

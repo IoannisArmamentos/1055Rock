@@ -16,7 +16,7 @@ public class PlayingSongTitleFetcher {
     private int mInterval = 20000; // 20 seconds
     private ISongTitleFetcher iSongTitleFetcher;
 
-     PlayingSongTitleFetcher(ISongTitleFetcher iSongTitleFetcher) {
+    PlayingSongTitleFetcher(ISongTitleFetcher iSongTitleFetcher) {
         mHandler = new Handler();
         this.iSongTitleFetcher = iSongTitleFetcher;
     }
@@ -34,15 +34,16 @@ public class PlayingSongTitleFetcher {
         @Override
         public void run() {
             try {
-                URL url = new URL("http://www.1055rock.gr/player/jaz.txt");
+                URL url = new URL("http://1055rock.gr/player/jaz.php");
                 BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
                 String str = in.readLine();
-                String[] parts = str.split("\\|");
+                String[] parts = str.split("\\ - ");
+                //String finalString = String.format("%s \n%s", parts[1], parts[0]); FOR ONE STRING, ONE LINE
 
-                String finalString = String.format("%s - %s", parts[3], parts[4]);
+                String title = String.format("%s", parts[1]);
+                String artist = String.format("%s", parts[0]);
 
-                iSongTitleFetcher.onSongTitleAvailable(finalString);
-
+                iSongTitleFetcher.onSongTitleAvailable(title, artist);
                 in.close();
             } catch (IOException ignored) {
             } finally {

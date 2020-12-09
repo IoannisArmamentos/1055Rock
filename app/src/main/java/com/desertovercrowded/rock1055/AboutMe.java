@@ -3,8 +3,13 @@ package com.desertovercrowded.rock1055;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class AboutMe extends AppCompatActivity {
@@ -18,6 +23,16 @@ public class AboutMe extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        final ImageButton bDonate = findViewById(R.id.bDonate);
+
+        bDonate.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://ko-fi.com/N4N62TEF4");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {

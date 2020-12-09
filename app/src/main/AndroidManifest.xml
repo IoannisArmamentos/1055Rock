@@ -15,10 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.desertovercrowded.rock1055.Producers" />
-        <activity android:name="com.desertovercrowded.rock1055.Program" />
-        <activity android:name="com.desertovercrowded.rock1055.AboutMe" />
-        <activity android:name="com.desertovercrowded.rock1055.Contact" />
+        <activity android:name="com.desertovercrowded.rock1055.Producers"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.desertovercrowded.rock1055.Program"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.desertovercrowded.rock1055.AboutMe"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name="com.desertovercrowded.rock1055.Contact"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
             android:name="com.desertovercrowded.rock1055.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"

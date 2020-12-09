@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,16 +13,16 @@
         android:orientation="vertical"
         android:touchscreenBlocksFocus="false">
 
-        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        <androidx.cardview.widget.CardView
             android:id="@+id/cvContact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            card_view:cardBackgroundColor="#99000000"
-            card_view:cardCornerRadius="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            card_view:cardBackgroundColor="#A6000000"
+            card_view:cardCornerRadius="6dp"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -33,125 +34,167 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/contact1"
+                    android:id="@+id/tvContact1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="5dp"
                     android:ems="10"
                     android:gravity="center"
                     android:text="@string/contact1"
                     android:textColor="#ffffff"
                     android:textSize="22sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.0"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/contact2"
+                    android:id="@+id/tvContact2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
                     android:autoLink="phone"
                     android:clickable="true"
                     android:ems="10"
+                    android:focusable="true"
                     android:text="@string/contact2"
                     android:textColor="#ffffff"
                     android:textSize="19sp"
-                    android:focusable="true" />
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/tvContact1"
+                    card_view:layout_constraintVertical_bias="0.0" />
 
                 <TextView
-                    android:id="@+id/contact3"
+                    android:id="@+id/tvContact3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
                     android:autoLink="phone"
                     android:clickable="true"
                     android:ems="10"
                     android:text="@string/contact3"
                     android:textColor="#ffffff"
-                    android:textSize="19sp" />
+                    android:textSize="19sp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/tvContact2"
+                    card_view:layout_constraintVertical_bias="0.0" />
 
                 <TextView
-                    android:id="@+id/contact4"
+                    android:id="@+id/tvContact4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
                     android:autoLink="phone"
                     android:clickable="true"
                     android:ems="10"
                     android:text="@string/contact4"
                     android:textColor="#ffffff"
-                    android:textSize="19sp" />
+                    android:textSize="19sp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/tvContact3"
+                    card_view:layout_constraintVertical_bias="0.0" />
 
                 <TextView
-                    android:id="@+id/contact5"
+                    android:id="@+id/tvContact5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
                     android:autoLink="email"
                     android:clickable="true"
                     android:ems="10"
                     android:text="@string/contact6"
                     android:textColor="#ffffff"
-                    android:textSize="19sp" />
-
+                    android:textSize="19sp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/tvContact4"
+                    card_view:layout_constraintVertical_bias="0.0" />
 
                 <TableLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="2dp"
                     android:ems="1"
                     android:textColor="#ffffff">
 
                     <TableRow>
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/button_Facebook"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:background="@drawable/facebook" />
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/void1"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:background="@color/cardview_shadow_end_color" />
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/button_Instagram"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:background="@drawable/instagram" />
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/void2"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:background="@color/cardview_shadow_end_color" />
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/button_Twitter"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:background="@drawable/twitter" />
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/void3"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:background="@color/cardview_shadow_end_color" />
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/button_Email"
                             android:layout_width="48dp"
                             android:layout_height="48dp"

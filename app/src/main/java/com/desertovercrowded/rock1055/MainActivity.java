@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
-        // Foreground Service for streaming. May god's love be with you
+        // If button is clicked, start or stop Foreground Service for streaming. May god's love be with you
         initializePlayPauseButton();
 
         // For policies, otherwise it won't run
@@ -56,13 +56,13 @@ public class MainActivity extends AppCompatActivity
         // If no Internet Connection
         if (!isOnline(this)) {
             displayNoInternetAlert(this);
-            finish();
-            return;
+            //finish();
+            //return;
         }
 
+        // Repeating Task for fetching song name from txt file from server
         playingSongTitleFetcher = new PlayingSongTitleFetcher(this);
         playingSongTitleFetcher.startRepeatingTask();
-
     }
 
     @Override
@@ -72,8 +72,7 @@ public class MainActivity extends AppCompatActivity
             drawer.closeDrawer(GravityCompat.START);
         } else if (backPressedTime + 2000 > System.currentTimeMillis()) {
             backToast.cancel();
-            android.os.Process.killProcess(android.os.Process.myPid());
-            System.exit(0);
+            finish();
         } else {
             backToast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT);
             backToast.show();
@@ -111,11 +110,11 @@ public class MainActivity extends AppCompatActivity
                 intent.setClass(this, AboutMe.class);
                 startActivity(intent);
                 break;
-            case R.id.nav_share:
-                share(this);
-                break;
             case R.id.nav_rate:
                 rate(this);
+                break;
+            case R.id.nav_share:
+                share(this);
                 break;
             case R.id.nav_exit:
                 android.os.Process.killProcess(android.os.Process.myPid());
@@ -129,16 +128,17 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void initializePlayPauseButton() {
-        ImageButton ibTooglePlay = findViewById(R.id.ibToogleState);
-        ibTooglePlay.setOnClickListener(new PlayPauseButtonListener());
+        ImageButton ibTogglePlay = findViewById(R.id.ibToogleState);
+        ibTogglePlay.setOnClickListener(new PlayPauseButtonListener());
     }
 
     @Override
-    public void onSongTitleAvailable(String title) {
-        TextView textView = findViewById(R.id.songplaying);
-
+    public void onSongTitleAvailable(String title, String artist) {
+        TextView textViewTitle = findViewById(R.id.songtitle);
+        TextView textViewArtist = findViewById(R.id.songartist);
         if (title != null) {
-            textView.setText(title);
+            textViewTitle.setText(title);
+            textViewArtist.setText(artist);
         }
     }
 

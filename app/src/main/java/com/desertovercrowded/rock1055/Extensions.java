@@ -1,6 +1,5 @@
 package com.desertovercrowded.rock1055;
 
-import android.app.Activity;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -25,15 +24,6 @@ class Extensions {
         context.startActivity(intent);
     }
 
-    //Share the app
-    static void share(Context context) {
-        Intent sendIntent = new Intent();
-        sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.share));
-        sendIntent.setType("text/plain");
-        context.startActivity(sendIntent);
-    }
-
     //Rate the app
     static void rate(Context context) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -42,6 +32,15 @@ class Extensions {
         intent.setPackage("com.android.vending");
         Toast.makeText(context, " :) ", Toast.LENGTH_SHORT).show();
         context.startActivity(intent);
+    }
+
+    //Share the app
+    static void share(Context context) {
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.share));
+        sendIntent.setType("text/plain");
+        context.startActivity(sendIntent);
     }
 
     //Checks if user has Internet access
@@ -61,12 +60,11 @@ class Extensions {
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 Intent intent = new Intent(Settings.ACTION_SETTINGS);
-                                //context.finish();
                                 context.startActivity(intent);
                             }
                         }
                 )
-                .setNegativeButton(R.string.exit,
+                .setNegativeButton(R.string.back,
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 //finish();
@@ -85,5 +83,4 @@ class Extensions {
             manager.deleteNotificationChannel(CHANNEL_ID);
         }
     }
-
 }

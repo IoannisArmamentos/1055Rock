@@ -7,14 +7,14 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="playingnow">PLAYING NOW</string>
-    <string name="songplaying"></string>
+    <string name="songtitle"> </string>
+    <string name="songartist"> </string>
     <string name="isonline">Για να λειτουργήσει η εφαρμογή απαιτείται πρόσβαση στο Internet.\nΠαρακαλώ ενεργοποιήστε το WiFi ή τα Δεδομένα Δικτύου(3G/4G).</string>
     <string name="unabletoconnect">Αδύνατη η σύνδεση</string>
     <string name="settings">Ρυθμίσεις</string>
     <string name="app_description">1055 Rock LiveStream</string>
     <string name="exit">Έξοδος</string>
-    <string name="back">ΠΙΣΩ</string>
+    <string name="back">Πίσω</string>
 
     <string name="nav_item_home">Αρχική</string>
     <string name="nav_item_program">Πρόγραμμα</string>
@@ -33,9 +33,10 @@
     <string name="about_not_found_email">Δεν βρέθηκε εφαρμογή email</string>
     <string name="about_email">E-mail</string>
     <string name="about1">Είμαι ένας φτωχός και μόνος καβαλάρης V-Strom 650</string>
-    <string name="about2">\@Email: giannisarmamentos@gmail.com</string>
-    <string name="about3">\@Email: desertovercrowded@gmail.com</string>
-    <string name="about4">Μην διστάσετε να επικοινωνήσετε μαζί μου για οποιοδήποτε θέμα στα παραπάνω email. Η γόνιμη κριτική είναι πάντα ευπρόσδεκτη.</string>
+    <string name="about2">Μπορείτε να με υποστηρίξετε, κερνώντας με ένα κάφε :)</string>
+    <string name="about3">Μην διστάσετε να επικοινωνήσετε μαζί μου για οποιοδήποτε θέμα στο παρακάτω email. Η γόνιμη κριτική είναι πάντα ευπρόσδεκτη.</string>
+    <string name="about4">\@Email: giannisarmamentos@gmail.com</string>
+    <string name="about10">\@Email: desertovercrowded@gmail.com</string>
     <string name="about5">Η εφαρμογή αυτή δεν έχει εμπορικό χαρακτήρα, δεν περιέχει διαφημίσεις και δεν διαβάζει κινήσεις και στοιχεία του χρήστη. Φτιάχτηκε καθαρά για σκοπούς διασκέδασης και θα βελτιώνεται συχνά.</string>
     <string name="about6">Σε περίπτωση που κολλάει ή δεν παίζει το Stream, δώστε λίγη αγάπη στο Server του σταθμού ❤</string>
     <string name="about7">FAQ
@@ -50,72 +51,74 @@
 -Είναι σχεδιασμένη και παρέχει πληροφορίες για τον σταθμό, τους παραγωγούς και τα προγράμματα τους.</string>
     <string name="about8">Σε περίπτωση που κολλάει ή δεν παίζει το Stream, δώστε λίγη αγάπη στο Server του σταθμού ❤</string>
     <string name="about9">Bonus Spotify Rock Playlist μου (η καλύτερη που υπάρχει :D ) : https://open.spotify.com/playlist/5fKDGMFztAB9qzpgj8OY6N?si=Ccb5CUHrQF6dgKnyggECfw</string>
-    <string name="about10"></string>
 
 
     <!-- String related to Contact -->
     <string name="contact1">Τρόποι Επικοινωνίας</string>
-    <string name="contact2">✆ ON AIR: 2310 24 1055</string>
-    <string name="contact3">📱 SMS/VIBER: 6999 24 1055</string>
+    <string name="contact2">📞 ON AIR: 2310 24 1055</string>
+    <string name="contact3">📱 SMS: 6999 24 1055</string>
     <string name="contact4">☎ OFFICE: 2310 24 3560</string>
-    <string name="contact5">\@ Email: info@1055rock.gr</string>
-    <string name="contact6">\@ Email: grammateia@1055rock.gr</string>
+    <string name="contact5">✉️ Email: info@1055rock.gr</string>
+    <string name="contact6">✉️ Email: grammateia@1055rock.gr</string>
 
     <!-- String related to Program -->
     <string name="program1">Weekdays</string>
 
-    <string name="program2">07.00 - 10.00</string>
+    <string name="program2">07.00 – 10.00</string>
     <string name="program3">Κώστας &amp; Γιάννης</string>
     <string name="program4">Cocktail</string>
 
-    <string name="program5">10.00 - 13.00 </string>
-    <string name="program6">Αλέξης &amp; Δέσποινα</string>
+    <string name="program5">10.00 – 13.00 </string>
+    <string name="program6">Αλέξης &amp; Νίκος</string>
     <string name="program7">Άθλιοι</string>
 
-    <string name="program8">13.00 - 16.00</string>
+    <string name="program8">13.00 – 16.00</string>
     <string name="program9">Λίνα Αντωνιάδου</string>
     <string name="program10">Drive Time</string>
 
-    <string name="program11">16.00 - 19.00</string>
-    <string name="program12">Έφη Δρογούτη</string>
-    <string name="program13">Εκτός Τόπου</string>
+    <string name="program11">16.00 – 19.00</string>
+    <string name="program12">Αλέξανρος Λαμπρίδης</string>
+    <string name="program13"></string>
 
-    <string name="program14">19.00 - 22.00</string>
+    <string name="program14">19.00 – 22.00</string>
     <string name="program15">Γιώργος Γαλάνης</string>
 
-    <string name="program16">22.00 - 01.00*</string>
-    <string name="program17">Νίκος Δαλαμπύρας</string>
-    <string name="program18">Roxx Star</string>
+    <string name="program16">22.00 – 00.00</string>
+    <string name="program17">Ελένη Σκάρπου</string>
+    <string name="program18">Άσωτη</string>
 
-    <string name="program19">23.00 - 00.00*</string>
-    <string name="program20">Αλέξανδρος Λαμπρίδης</string>
-    <string name="program21">Party Zone</string>
+    <string name="program19">Afternight</string>
+    <string name="program20">1055Rock Overnight</string>
 
-    <string name="program22">Afternight</string>
-    <string name="program23">1055Rock Overnight</string>
+    <string name="program21">Weekends</string>
 
-    <string name="program24">Weekends</string>
+    <string name="program22">10:00 – 13:00</string>
+    <string name="program23">Κώστας Ταλέας</string>
+    <string name="program24">Ιστορίες</string>
 
-    <string name="program25">10:00 - 14:00</string>
-    <string name="program26">Κώστας Ταλέας</string>
+    <string name="program25">14:00 – 17:00</string>
+    <string name="program26">Θωμάς Αρβανίτης</string>
+    <string name="program27">Sex &amp; Drums</string>
 
-    <string name="program27">14:00 - 18:00</string>
-    <string name="program28">Θωμάς Αρβανίτης</string>
-    <string name="program29">Sex &amp; Drums</string>
+    <string name="program28">18:00 – 21:00</string>
+    <string name="program29">Κυριάκος Μπέρτος</string>
+    <string name="program30">Disconnected</string>
 
-    <string name="program30">18:00 - 22:00</string>
-    <string name="program31">Κυριάκος Μπέρτος</string>
-    <string name="program32">Dissconnected</string>
+    <string name="program31">21:00 – 00:00 Σ</string>
+    <string name="program32">Έφη Δρογούτη</string>
+    <string name="program33">Εκτός Τόπου</string>
 
-    <string name="program33">22:00 - 00:00*</string>
-    <string name="program34">Χριστόφορος Γεωργίου</string>
-    <string name="program35">Metal Zone</string>
+    <string name="program34">21:00 – 00:00 Κ</string>
+    <string name="program35">Χριστόφορος Γεωργίου</string>
+    <string name="program36">1055ROCK -X</string>
 
-    <string name="program36">Ώρες</string>
-    <string name="program37">Παραγωγός</string>
-    <string name="program38">Εκπομπή</string>
+    <string name="program37">Ώρες</string>
+    <string name="program38">Παραγωγός</string>
+    <string name="program39">Εκπομπή</string>
 
-    <string name="program39">Best Rock Music</string>
+    <string name="program40">Best Rock Music</string>
+
+
 
     <string name="title_activity_main">MainActivity</string>
 

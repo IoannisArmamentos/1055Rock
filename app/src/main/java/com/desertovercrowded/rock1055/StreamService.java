@@ -56,7 +56,7 @@ public class StreamService extends Service {
 
         mediaSession = new MediaSessionCompat(this, "tag");
 
-        /*//ΓΙΑ ΚΛΙΚ ΣΤΑ ΚΩΛΟΚΟΥΜΠΑ
+        /*//ΓΙΑ ΚΛΙΚ ΣΤΑ ΑΤΙΜΑ ΤΑ ΚΟΥΜΠΑ
                 Intent activityPlay = new Intent(this, Contact.class);
         PendingIntent contentPlay = PendingIntent.getActivity(this,
                 0, activityPlay, 0);
@@ -98,8 +98,8 @@ public class StreamService extends Service {
         //player.setAudioStreamType(AudioManager.STREAM_MUSIC);
 
         try {
-            //player.setDataSource("http://radio.onweb.gr:8078/");
             player.setDataSource("http://radio.1055rock.gr:30000/1055/");
+
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
         } catch (IllegalStateException e) {
