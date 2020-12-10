@@ -1,9 +1,11 @@
 # 1055Rock
 A Radio Streaming application made for 1055 Rock station in Thessaloniki, Greece. Implemented are AsyncTasks, ForegroundService, Handler, MediaPlayer, and JSON. I open sourced my github code so it can be easily customized and used as a sample for other radio stations.
 
+#Main Screen
 
 ![Main Screen](https://lh3.googleusercontent.com/mYwYNZRP6-uSyHm2OjpvWPoNSN3-g_JX0PVIDgd216PatRTA5jNrror1XGYMg3eOZm56HSO80EpreQ=w2560-h1329-rw)
 
+Menu
 ![Menu](https://lh5.googleusercontent.com/9wUJiIfMvKV8_Qe1ODZqzmKK8Y99OTtTNrgQ6e59mBxe4c7PEy4u5beX3k2ZMLhbMdUOvC_BuPSq7w=w2560-h1297-rw)
 
 ![Program](https://lh3.googleusercontent.com/TIm_vYhCatxkITrmGUl3ZVwAkfTk6wr2yP8QrpNGeNGcWVb1oPWqTlqRI_snFqcRDE-hJs-2BSJLvA=w2560-h1297-rw)
