@@ -56,8 +56,6 @@ public class MainActivity extends AppCompatActivity
         // If no Internet Connection
         if (!isOnline(this)) {
             displayNoInternetAlert(this);
-            //finish();
-            //return;
         }
 
         // Repeating Task for fetching song name from txt file from server
@@ -74,7 +72,7 @@ public class MainActivity extends AppCompatActivity
             backToast.cancel();
             finish();
         } else {
-            backToast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT);
+            backToast = Toast.makeText(getBaseContext(), "Πατήστε πίσω ξανά για έξοδο", Toast.LENGTH_SHORT);
             backToast.show();
         }
         backPressedTime = System.currentTimeMillis();

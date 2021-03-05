@@ -1,9 +1,6 @@
 package com.desertovercrowded.rock1055;
 
-import android.app.Service;
-import android.content.Intent;
 import android.os.Handler;
-import android.os.IBinder;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,10 +12,15 @@ public class PlayingSongTitleFetcher {
     private Handler mHandler;
     private int mInterval = 20000; // 20 seconds
     private ISongTitleFetcher iSongTitleFetcher;
+    private ISongTitleFetcher subscriber;
 
     PlayingSongTitleFetcher(ISongTitleFetcher iSongTitleFetcher) {
         mHandler = new Handler();
         this.iSongTitleFetcher = iSongTitleFetcher;
+    }
+
+    public void subscribe(ISongTitleFetcher subscriber) {
+        this.subscriber = subscriber;
     }
 
     void startRepeatingTask() {
@@ -42,8 +44,10 @@ public class PlayingSongTitleFetcher {
 
                 String title = String.format("%s", parts[1]);
                 String artist = String.format("%s", parts[0]);
-
                 iSongTitleFetcher.onSongTitleAvailable(title, artist);
+                if (subscriber != null) {
+                    subscriber.onSongTitleAvailable(title, artist);
+                }
                 in.close();
             } catch (IOException ignored) {
             } finally {

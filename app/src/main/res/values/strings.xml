@@ -13,8 +13,8 @@
     <string name="unabletoconnect">Αδύνατη η σύνδεση</string>
     <string name="settings">Ρυθμίσεις</string>
     <string name="app_description">1055 Rock LiveStream</string>
-    <string name="exit">Έξοδος</string>
-    <string name="back">Πίσω</string>
+    <string name="exit">ΕΞΟΔΟΣ</string>
+    <string name="back">ΠΙΣΩ</string>
 
     <string name="nav_item_home">Αρχική</string>
     <string name="nav_item_program">Πρόγραμμα</string>
@@ -92,7 +92,7 @@
 
     <string name="program21">Weekends</string>
 
-    <string name="program22">10:00 – 13:00</string>
+    <string name="program22">11:00 – 14:00</string>
     <string name="program23">Κώστας Ταλέας</string>
     <string name="program24">Ιστορίες</string>
 
@@ -116,9 +116,9 @@
     <string name="program38">Παραγωγός</string>
     <string name="program39">Εκπομπή</string>
 
-    <string name="program40">Best Rock Music</string>
-
-
+    <string name="program40">08:00 – 11:00 </string>
+    <string name="program41">Αποστόλης &amp; Χριστίνα</string>
+    <string name="program42">RA2PHONICS</string>
 
     <string name="title_activity_main">MainActivity</string>
 

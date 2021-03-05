@@ -11,7 +11,7 @@
     android:clickable="true"
     android:elevation="10dp"
     android:foreground="?android:attr/selectableItemBackground"
-    card_view:cardBackgroundColor="#CC000000"
+    card_view:cardBackgroundColor="#D9000000"
     card_view:cardCornerRadius="5dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout

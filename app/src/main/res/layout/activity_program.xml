@@ -24,7 +24,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="2dp"
-                card_view:cardBackgroundColor="#CC000000"
+                card_view:cardBackgroundColor="#D9000000"
                 card_view:cardCornerRadius="5dp"
                 card_view:cardUseCompatPadding="true">
 
@@ -227,7 +227,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="2dp"
-                card_view:cardBackgroundColor="#CC000000"
+                card_view:cardBackgroundColor="#D9000000"
                 card_view:cardCornerRadius="5dp"
                 card_view:cardUseCompatPadding="true">
 
@@ -259,6 +259,29 @@
                         android:layout_marginRight="5dp"
                         android:stretchColumns="*"
                         android:textColor="#ffffff">
+
+                        <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program40"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program41"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program42"
+                                android:textAlignment="viewStart"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </TableRow>
 
                         <TableRow>
 
