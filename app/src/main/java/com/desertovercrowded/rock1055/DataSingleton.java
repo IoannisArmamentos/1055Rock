@@ -32,7 +32,7 @@ public class DataSingleton {
         DataSingleton.producerList = producerList;
     }
 
-    public void LoadDataFromJson(Context context) {
+    public void loadDataFromJson(Context context) {
 
         Gson gson = new Gson();
 

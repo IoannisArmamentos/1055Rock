@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,7 +17,7 @@
             android:orientation="vertical"
             android:touchscreenBlocksFocus="false">
 
-            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cvWeekdays"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,7 +61,7 @@
 
                             <TextView
                                 android:padding="3dip"
-                                android:text="@string/program37"
+                                android:text="@string/program32"
                                 android:textAlignment="center"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp"
@@ -68,7 +69,7 @@
 
                             <TextView
                                 android:padding="3dip"
-                                android:text="@string/program38"
+                                android:text="@string/program33"
                                 android:textAlignment="center"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp"
@@ -77,7 +78,7 @@
                             <TextView
                                 android:layout_width="82dp"
                                 android:padding="3dip"
-                                android:text="@string/program39"
+                                android:text="@string/program34"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
@@ -169,57 +170,32 @@
 
                             <TextView
                                 android:padding="3dip"
-                                android:text="@string/program13"
                                 android:textAlignment="textStart"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp" />
                         </TableRow>
 
                         <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program13"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
 
                             <TextView
                                 android:padding="3dip"
                                 android:text="@string/program14"
                                 android:textColor="#ffffff"
-                                android:textSize="15sp" />
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program15"
-                                android:textColor="#ffffff"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
-
-                        </TableRow>
-
-                        <TableRow>
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program16"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp" />
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program17"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program18"
-                                android:textAlignment="textStart"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp" />
 
                         </TableRow>
                     </TableLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cvWeekends"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -246,7 +222,7 @@
                         android:layout_gravity="center"
                         android:ems="10"
                         android:gravity="center"
-                        android:text="@string/program21"
+                        android:text="@string/program17"
                         android:textColor="#ffffff"
                         android:textSize="22sp"
                         android:textStyle="bold|italic" />
@@ -264,139 +240,116 @@
 
                             <TextView
                                 android:padding="3dip"
-                                android:text="@string/program40"
+                                android:text="@string/program18"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp" />
 
                             <TextView
                                 android:padding="3dip"
-                                android:text="@string/program41"
+                                android:text="@string/program19"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:padding="3dip"
-                                android:text="@string/program42"
+                                android:text="@string/program20"
                                 android:textAlignment="viewStart"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp" />
                         </TableRow>
 
                         <TableRow>
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program21"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
 
                             <TextView
                                 android:padding="3dip"
                                 android:text="@string/program22"
                                 android:textColor="#ffffff"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:textAlignment="viewStart"
+                                android:textColor="#ffffff"
                                 android:textSize="15sp" />
+                        </TableRow>
+
+                        <TableRow>
 
                             <TextView
                                 android:padding="3dip"
                                 android:text="@string/program23"
                                 android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program24"
+                                android:textColor="#ffffff"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:padding="3dip"
-                                android:text="@string/program24"
+                                android:text="@string/program25"
                                 android:textAlignment="viewStart"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp" />
                         </TableRow>
 
                         <TableRow>
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program25"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp" />
 
                             <TextView
                                 android:padding="3dip"
                                 android:text="@string/program26"
                                 android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:padding="3dip"
+                                android:text="@string/program27"
+                                android:textColor="#ffffff"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:padding="3dip"
-                                android:text="@string/program27"
-                                android:textAlignment="viewStart"
+                                android:text="@string/program28"
+                                android:textAlignment="textStart"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp" />
                         </TableRow>
 
                         <TableRow>
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program28"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp" />
 
                             <TextView
                                 android:padding="3dip"
                                 android:text="@string/program29"
                                 android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
+                                android:textSize="15sp" />
 
                             <TextView
                                 android:padding="3dip"
                                 android:text="@string/program30"
-                                android:textAlignment="textStart"
                                 android:textColor="#ffffff"
-                                android:textSize="15sp" />
-                        </TableRow>
-
-                        <TableRow>
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:padding="3dip"
                                 android:text="@string/program31"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp" />
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program32"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program33"
                                 android:textAlignment="textStart"
                                 android:textColor="#ffffff"
                                 android:textSize="15sp" />
                         </TableRow>
 
-                        <TableRow>
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program34"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp" />
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program35"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:padding="3dip"
-                                android:text="@string/program36"
-                                android:textAlignment="textStart"
-                                android:textColor="#ffffff"
-                                android:textSize="15sp" />
-                        </TableRow>
                     </TableLayout>
 
                 </LinearLayout>

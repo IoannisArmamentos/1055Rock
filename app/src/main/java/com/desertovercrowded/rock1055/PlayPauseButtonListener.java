@@ -12,13 +12,12 @@ public class PlayPauseButtonListener implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
+        Intent serviceIntent = new Intent(view.getContext(), StreamService.class);
         if (!streams) {
-            Intent serviceIntent = new Intent(view.getContext(), StreamService.class);
             ContextCompat.startForegroundService(view.getContext(), serviceIntent);
             ((ImageButton) view).setImageResource(R.drawable.ic_pause_circle_outline_black_48dp);
             streams = true;
         } else {
-            Intent serviceIntent = new Intent(view.getContext(), StreamService.class);
             view.getContext().stopService(serviceIntent);
             ((ImageButton) view).setImageResource(R.drawable.ic_play_circle_outline_black_48dp);
             streams = false;

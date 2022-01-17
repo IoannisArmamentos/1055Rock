@@ -57,18 +57,14 @@ class Extensions {
                 .setTitle(R.string.unabletoconnect)
                 .setCancelable(false)
                 .setPositiveButton(R.string.settings,
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                Intent intent = new Intent(Settings.ACTION_SETTINGS);
-                                context.startActivity(intent);
-                            }
+                        (dialog, id) -> {
+                            Intent intent = new Intent(Settings.ACTION_SETTINGS);
+                            context.startActivity(intent);
                         }
                 )
                 .setNegativeButton(R.string.back,
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                //finish();
-                            }
+                        (dialog, id) -> {
+                            //finish();
                         }
                 );
         AlertDialog alert = builder.create();

@@ -56,13 +56,7 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.MyView
             Picasso.get().load(uri).into(myViewHolder.ivProducerImage);
         }
         final Producer temp = this.producers.get(position);
-        myViewHolder.cvProducer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("YOLO", "YOLO");
-                ShowMoar(temp);
-            }
-        });
+        myViewHolder.cvProducer.setOnClickListener(view -> ShowMoar(temp));
     }
 
     @Override
@@ -93,11 +87,7 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.MyView
                 .setTitle(producer.getName())
                 .setCancelable(true)
                 .setNeutralButton(R.string.back,
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.dismiss();
-                            }
-                        }
+                        (dialog, id) -> dialog.dismiss()
                 );
         AlertDialog alert = builder.create();
         alert.show();

@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/armameio/StudioProjects/1055Rock/app/src/main/res/layout/activity_contact.xml" value="0.425" />
+        <entry key="..\:/Users/armameio/StudioProjects/1055Rock/app/src/main/res/layout/activity_main.xml" value="0.425" />
+        <entry key="..\:/Users/armameio/StudioProjects/1055Rock/app/src/main/res/layout/activity_producers.xml" value="0.425" />
+        <entry key="..\:/Users/armameio/StudioProjects/1055Rock/app/src/main/res/layout/activity_program.xml" value="0.425" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

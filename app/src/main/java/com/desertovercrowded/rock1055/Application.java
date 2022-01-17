@@ -12,7 +12,7 @@ public class Application extends android.app.Application {
         super.onCreate();
         createNotificationChannel();
 
-        DataSingleton.getInstance().LoadDataFromJson(this);
+        DataSingleton.getInstance().loadDataFromJson(this);
     }
 
     private void createNotificationChannel() {
@@ -22,7 +22,6 @@ public class Application extends android.app.Application {
                     "1055 Service Channel",
                     NotificationManager.IMPORTANCE_LOW
             );
-            //channel1.setDescription("This is Channel 1");
 
             NotificationManager manager = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(serviceChannel);

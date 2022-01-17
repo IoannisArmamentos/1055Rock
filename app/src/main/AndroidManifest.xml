@@ -30,7 +30,8 @@
             android:label="@string/title_activity_main_menu"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.desertovercrowded.rock1055.Splash">
+        <activity android:name="com.desertovercrowded.rock1055.Splash"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

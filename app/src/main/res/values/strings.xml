@@ -68,57 +68,47 @@
     <string name="program3">Κώστας &amp; Γιάννης</string>
     <string name="program4">Cocktail</string>
 
-    <string name="program5">10.00 – 13.00 </string>
+    <string name="program5">10.00 – 14.00 </string>
     <string name="program6">Αλέξης &amp; Νίκος</string>
     <string name="program7">Άθλιοι</string>
 
-    <string name="program8">13.00 – 16.00</string>
+    <string name="program8">14.00 – 18.00</string>
     <string name="program9">Λίνα Αντωνιάδου</string>
     <string name="program10">Drive Time</string>
 
-    <string name="program11">16.00 – 19.00</string>
-    <string name="program12">Αλέξανρος Λαμπρίδης</string>
-    <string name="program13"></string>
+    <string name="program11">18.00 – 21.00</string>
+    <string name="program12">Γιώργος Γαλάνης</string>
 
-    <string name="program14">19.00 – 22.00</string>
-    <string name="program15">Γιώργος Γαλάνης</string>
+    <string name="program13">21.00 – 00.00</string>
+    <string name="program14">Γιώργος Λάσκαρης</string>
 
-    <string name="program16">22.00 – 00.00</string>
-    <string name="program17">Ελένη Σκάρπου</string>
-    <string name="program18">Άσωτη</string>
+    <string name="program15">Afternight</string>
+    <string name="program16">1055Rock Overnight</string>
 
-    <string name="program19">Afternight</string>
-    <string name="program20">1055Rock Overnight</string>
+    <string name="program17">Weekends</string>
 
-    <string name="program21">Weekends</string>
+    <string name="program18">09:00 – 13:00</string>
+    <string name="program19">Κώστας Ταλέας</string>
+    <string name="program20">Ιστορίες</string>
 
-    <string name="program22">11:00 – 14:00</string>
-    <string name="program23">Κώστας Ταλέας</string>
-    <string name="program24">Ιστορίες</string>
+    <string name="program21">13:00 – 17:00</string>
+    <string name="program22">Δημήτρης Λαδόπουλος</string>
 
-    <string name="program25">14:00 – 17:00</string>
-    <string name="program26">Θωμάς Αρβανίτης</string>
-    <string name="program27">Sex &amp; Drums</string>
+    <string name="program23">17:00 – 20:00</string>
+    <string name="program24">Κυριάκος Μπέρτος</string>
+    <string name="program25">Disconnected</string>
 
-    <string name="program28">18:00 – 21:00</string>
-    <string name="program29">Κυριάκος Μπέρτος</string>
-    <string name="program30">Disconnected</string>
+    <string name="program26">21:00 – 00:00 Σ</string>
+    <string name="program27">Έφη Δρογούτη</string>
+    <string name="program28">Εκτός Τόπου</string>
 
-    <string name="program31">21:00 – 00:00 Σ</string>
-    <string name="program32">Έφη Δρογούτη</string>
-    <string name="program33">Εκτός Τόπου</string>
+    <string name="program29">21:00 – 00:00 Κ</string>
+    <string name="program30">Χριστόφορος Γεωργίου</string>
+    <string name="program31">1055ROCK -X</string>
 
-    <string name="program34">21:00 – 00:00 Κ</string>
-    <string name="program35">Χριστόφορος Γεωργίου</string>
-    <string name="program36">1055ROCK -X</string>
-
-    <string name="program37">Ώρες</string>
-    <string name="program38">Παραγωγός</string>
-    <string name="program39">Εκπομπή</string>
-
-    <string name="program40">08:00 – 11:00 </string>
-    <string name="program41">Αποστόλης &amp; Χριστίνα</string>
-    <string name="program42">RA2PHONICS</string>
+    <string name="program32">Ώρες</string>
+    <string name="program33">Παραγωγός</string>
+    <string name="program34">Εκπομπή</string>
 
     <string name="title_activity_main">MainActivity</string>
 

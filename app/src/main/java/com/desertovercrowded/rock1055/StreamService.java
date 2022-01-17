@@ -73,16 +73,12 @@ public class StreamService extends Service implements ISongTitleFetcher {
     public static void startPlaying() {
         try {
             player.prepareAsync();
-            player.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-                public void onPrepared(MediaPlayer mp) {
-                    player.start();
-                }
-            });
+            player.setOnPreparedListener(mp -> player.start());
         } catch (Exception ignored) {
         }
     }
 
-    public static void stopPlaying() throws IOException {
+    public static void stopPlaying() {
         try {
             player.stop();
             player.reset();
@@ -97,11 +93,7 @@ public class StreamService extends Service implements ISongTitleFetcher {
     public void onDestroy() {
         super.onDestroy();
         if (player != null) {
-            try {
-                stopPlaying();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            stopPlaying();
         }
     }
 

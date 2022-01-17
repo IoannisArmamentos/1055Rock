@@ -26,15 +26,14 @@ public class AboutMe extends AppCompatActivity {
 
         final ImageButton bDonate = findViewById(R.id.bDonate);
 
-        bDonate.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://ko-fi.com/N4N62TEF4");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
+        bDonate.setOnClickListener(v -> {
+            Uri uri = Uri.parse("https://ko-fi.com/N4N62TEF4");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         });
     }
 
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
