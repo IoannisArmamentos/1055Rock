@@ -24,6 +24,14 @@
             android:id="@+id/nav_site"
             android:icon="@drawable/ic_open_in_browser_black_24dp"
             android:title="@string/nav_item_site" />
+        <item
+            android:id="@+id/nav_sms"
+            android:icon="@drawable/ic_baseline_sms_24"
+            android:title="@string/nav_item_sms" />
+        <item
+            android:id="@+id/nav_viber"
+            android:icon="@drawable/ic_viber"
+            android:title="@string/nav_item_viber" />
     </group>
 
     <item android:title="Διάφορα">

@@ -39,7 +39,7 @@ public class PlayingSongTitleFetcher {
                 URL url = new URL("http://1055rock.gr/player/jaz.php");
                 BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
                 String str = in.readLine();
-                String[] parts = str.split("\\ - ");
+                String[] parts = str.split(" - ");
                 //String finalString = String.format("%s \n%s", parts[1], parts[0]); FOR ONE STRING, ONE LINE
 
                 String title = String.format("%s", parts[1]);

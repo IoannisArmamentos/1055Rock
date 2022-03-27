@@ -50,7 +50,7 @@ public class Contact extends AppCompatActivity {
         bEmail.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_SENDTO);
-            intent.setData(Uri.parse("mailto:grammateia@1055rock.gr"));
+            intent.setData(Uri.parse("mailto:1055rockstudio@gmail.com"));
             try {
                 startActivity(intent);
             } catch (Exception e) {
@@ -60,11 +60,14 @@ public class Contact extends AppCompatActivity {
         });
     }
 
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
                 return true;
+            default:
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

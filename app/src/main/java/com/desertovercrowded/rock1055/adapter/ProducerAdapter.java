@@ -1,9 +1,7 @@
-package com.desertovercrowded.rock1055.Adapter;
+package com.desertovercrowded.rock1055.adapter;
 
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.net.Uri;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,7 +54,7 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.MyView
             Picasso.get().load(uri).into(myViewHolder.ivProducerImage);
         }
         final Producer temp = this.producers.get(position);
-        myViewHolder.cvProducer.setOnClickListener(view -> ShowMoar(temp));
+        myViewHolder.cvProducer.setOnClickListener(view -> showMoar(temp));
     }
 
     @Override
@@ -66,7 +64,10 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.MyView
 
     class MyViewHolder extends RecyclerView.ViewHolder {
         CardView cvProducer;
-        TextView tvProducerName, tvProducerDescription, tvProducerShow, tvProducerShowTime;
+        TextView tvProducerName;
+        TextView tvProducerDescription;
+        TextView tvProducerShow;
+        TextView tvProducerShowTime;
         ImageView ivProducerImage;
 
         public MyViewHolder(View view) {
@@ -81,7 +82,7 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.MyView
         }
     }
 
-    private void ShowMoar(Producer producer) {
+    private void showMoar(Producer producer) {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setMessage(producer.getDescription())
                 .setTitle(producer.getName())

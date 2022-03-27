@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.desertovercrowded.rock1055.Adapter.ProducerAdapter;
+import com.desertovercrowded.rock1055.adapter.ProducerAdapter;
 
 public class Producers extends AppCompatActivity {
 
@@ -32,11 +32,14 @@ public class Producers extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
                 return true;
+            default:
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

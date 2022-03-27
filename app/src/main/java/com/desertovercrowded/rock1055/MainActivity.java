@@ -22,6 +22,8 @@ import static com.desertovercrowded.rock1055.Extensions.isOnline;
 import static com.desertovercrowded.rock1055.Extensions.rate;
 import static com.desertovercrowded.rock1055.Extensions.share;
 import static com.desertovercrowded.rock1055.Extensions.site;
+import static com.desertovercrowded.rock1055.Extensions.sms;
+import static com.desertovercrowded.rock1055.Extensions.viber;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, ISongTitleFetcher {
@@ -64,21 +66,6 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel();
-            finish();
-        } else {
-            backToast = Toast.makeText(getBaseContext(), "Πατήστε πίσω ξανά για έξοδο", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-        backPressedTime = System.currentTimeMillis();
-    }
-
-    @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         Intent intent = new Intent();
@@ -104,6 +91,12 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_site:
                 site(this);
                 break;
+            case R.id.nav_sms:
+                sms(this);
+                break;
+            case R.id.nav_viber:
+                viber(this);
+                break;
             case R.id.nav_info:
                 intent.setClass(this, AboutMe.class);
                 startActivity(intent);
@@ -115,8 +108,9 @@ public class MainActivity extends AppCompatActivity
                 share(this);
                 break;
             case R.id.nav_exit:
-                android.os.Process.killProcess(android.os.Process.myPid());
-                System.exit(0);
+                finishAffinity();
+                break;
+            default:
                 break;
         }
 
@@ -141,11 +135,24 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            backToast.cancel();
+            finish();
+        } else {
+            backToast = Toast.makeText(getBaseContext(), "Πατήστε πίσω ξανά για έξοδο", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime = System.currentTimeMillis();
+    }
+
+    @Override
     public void onDestroy() {
         super.onDestroy();
         playingSongTitleFetcher.stopRepeatingTask();
-        deleteNotificationChannel(this);
-
         // Kill stream service
         Intent serviceIntent = new Intent(this, StreamService.class);
         stopService(serviceIntent);

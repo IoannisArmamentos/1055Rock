@@ -11,7 +11,6 @@ public class Application extends android.app.Application {
     public void onCreate() {
         super.onCreate();
         createNotificationChannel();
-
         DataSingleton.getInstance().loadDataFromJson(this);
     }
 

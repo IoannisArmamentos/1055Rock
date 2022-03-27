@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 32
-    buildToolsVersion '30.0.3'
+    buildToolsVersion '32.0.0'
     defaultConfig {
         applicationId "com.desertovercrowded.rock1055"
         minSdkVersion 23
@@ -36,9 +36,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test:runner:1.4.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.google.code.gson:gson:2.9.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation "androidx.cardview:cardview:1.0.0"
     implementation 'com.ms-square:expandableTextView:0.1.4'
-    implementation 'androidx.media:media:1.4.3'
+    implementation 'androidx.media:media:1.5.0'
+    implementation "androidx.work:work-runtime:2.7.1"
 }

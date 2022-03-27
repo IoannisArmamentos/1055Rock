@@ -2,18 +2,13 @@
     <string name="app_name">1055 Rock Radio</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
     <string name="songtitle"> </string>
     <string name="songartist"> </string>
-    <string name="isonline">Για να λειτουργήσει η εφαρμογή απαιτείται πρόσβαση στο Internet.\nΠαρακαλώ ενεργοποιήστε το WiFi ή τα Δεδομένα Δικτύου(3G/4G).</string>
+    <string name="isonline">Για να λειτουργήσει η εφαρμογή απαιτείται πρόσβαση στο Internet.\n Ενεργοποιήστε το WiFi ή τα Δεδομένα Δικτύου(4G/5G).</string>
     <string name="unabletoconnect">Αδύνατη η σύνδεση</string>
     <string name="settings">Ρυθμίσεις</string>
-    <string name="app_description">1055 Rock LiveStream</string>
-    <string name="exit">ΕΞΟΔΟΣ</string>
     <string name="back">ΠΙΣΩ</string>
 
     <string name="nav_item_home">Αρχική</string>
@@ -21,6 +16,8 @@
     <string name="nav_item_producers">Παραγωγοί</string>
     <string name="nav_item_contact">Επικοινωνία</string>
     <string name="nav_item_site">Site</string>
+    <string name="nav_item_sms">SMS</string>
+    <string name="nav_item_viber">Viber</string>
     <string name="nav_item_about">Σχετικά</string>
     <string name="nav_item_exit"> Έξοδος</string>
     <string name="title_activity_main_menu">1055 Rock</string>
@@ -32,34 +29,20 @@
     <string name="about_email_intent">1055 Rock</string>
     <string name="about_not_found_email">Δεν βρέθηκε εφαρμογή email</string>
     <string name="about_email">E-mail</string>
-    <string name="about1">Είμαι ένας φτωχός και μόνος καβαλάρης V-Strom 650</string>
+    <string name="about1">Είμαι ένας φτωχός και μόνος καβαλάρης Suzuki V-Strom 650</string>
     <string name="about2">Μπορείτε να με υποστηρίξετε, κερνώντας με ένα κάφε :)</string>
     <string name="about3">Μην διστάσετε να επικοινωνήσετε μαζί μου για οποιοδήποτε θέμα στο παρακάτω email. Η γόνιμη κριτική είναι πάντα ευπρόσδεκτη.</string>
     <string name="about4">\@Email: giannisarmamentos@gmail.com</string>
-    <string name="about10">\@Email: desertovercrowded@gmail.com</string>
     <string name="about5">Η εφαρμογή αυτή δεν έχει εμπορικό χαρακτήρα, δεν περιέχει διαφημίσεις και δεν διαβάζει κινήσεις και στοιχεία του χρήστη. Φτιάχτηκε καθαρά για σκοπούς διασκέδασης και θα βελτιώνεται συχνά.</string>
     <string name="about6">Σε περίπτωση που κολλάει ή δεν παίζει το Stream, δώστε λίγη αγάπη στο Server του σταθμού ❤</string>
-    <string name="about7">FAQ
-1)Γιατί να μην ακούσω από το Site του σταθμού;
--Λιγότερη χρήση δεδομένων, ταχύτερο Streaming, ακόμα και όταν το Site κολλάει ή είναι κάτω.
--Είναι Cool.
-
-2)Γιατί να μην χρησιμοποιήσω μια από τις άλλες εφαρμογές ραδιοφώνου για Android;
--Σε αντίθεση με τις άλλες εφαρμογές, δεν υπάρχουν διαφημίσεις και harvest προσωπικών δεδομένων και κινήσεων.
--Είναι lightweight και απλή.
--Εμφανίζεται ο τίτλος του τραγουδιού που παίζει.
--Είναι σχεδιασμένη και παρέχει πληροφορίες για τον σταθμό, τους παραγωγούς και τα προγράμματα τους.</string>
-    <string name="about8">Σε περίπτωση που κολλάει ή δεν παίζει το Stream, δώστε λίγη αγάπη στο Server του σταθμού ❤</string>
     <string name="about9">Bonus Spotify Rock Playlist μου (η καλύτερη που υπάρχει :D ) : https://open.spotify.com/playlist/5fKDGMFztAB9qzpgj8OY6N?si=Ccb5CUHrQF6dgKnyggECfw</string>
-
 
     <!-- String related to Contact -->
     <string name="contact1">Τρόποι Επικοινωνίας</string>
     <string name="contact2">📞 ON AIR: 2310 24 1055</string>
     <string name="contact3">📱 SMS: 6999 24 1055</string>
     <string name="contact4">☎ OFFICE: 2310 24 3560</string>
-    <string name="contact5">✉️ Email: info@1055rock.gr</string>
-    <string name="contact6">✉️ Email: grammateia@1055rock.gr</string>
+    <string name="contact6">✉️ Email: 1055rockstudio@gmail.com</string>
 
     <!-- String related to Program -->
     <string name="program1">Weekdays</string>
@@ -111,13 +94,4 @@
     <string name="program34">Εκπομπή</string>
 
     <string name="title_activity_main">MainActivity</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
-    <string name="title_item_list">Items</string>
-    <string name="title_item_detail">Item Detail</string>
 </resources>

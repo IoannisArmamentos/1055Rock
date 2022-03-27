@@ -6,6 +6,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
+    <queries>
+        <package android:name="com.viber.voip" />
+    </queries>
+
     <application
         android:name=".Application"
         android:allowBackup="true"
@@ -13,14 +17,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:configChanges="keyboardHidden"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.desertovercrowded.rock1055.Producers"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name="com.desertovercrowded.rock1055.Program"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
-        <activity android:name="com.desertovercrowded.rock1055.AboutMe"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name="com.desertovercrowded.rock1055.Producers"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.desertovercrowded.rock1055.Program"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.desertovercrowded.rock1055.AboutMe"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
             android:name="com.desertovercrowded.rock1055.Contact"
             android:configChanges="keyboardHidden|orientation|screenSize" />
@@ -30,7 +38,8 @@
             android:label="@string/title_activity_main_menu"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.desertovercrowded.rock1055.Splash"
+        <activity
+            android:name="com.desertovercrowded.rock1055.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,6 +47,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <service android:name=".StreamService" />
     </application>
 
